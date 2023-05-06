@@ -1,0 +1,592 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 6px;
+}
+
+body {
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+  
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+/*RESPONSIV*/
+
+@media(min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+
+    html {
+        font-size: 7px;
+    }
+
+}
+
+@media(min-width: 770px) {
+    .container {
+        max-width: 730px;
+    }
+
+    html {
+        font-size: 8px;
+    }
+
+}
+
+@media(min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    html {
+        font-size: 9px;
+    }
+
+}
+
+@media(min-width:1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    html {
+        font-size: 10px;
+    }
+
+}
+
+
+
+
+
+
+
+
+/*  NAVBAR*/
+
+
+nav {
+    width: 100%;
+    font-family: 'Poppins';
+    background-color: #1C1E53;
+    color: #fff;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    position: fixed;
+    z-index: 999999;
+}
+
+#logo-1 {
+    float: left;
+    padding-top: 1.5rem;
+}
+
+#logo-1 .logo {
+    color: #fff;
+    font-weight: 600;
+    font-size: 2.8rem;
+   
+
+
+}
+
+/* navbarda olan Li - ler */
+
+#nav-links {
+    float: right;
+}
+
+#nav-links .nav-item {
+    float: left;
+    margin: .5rem;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 1.6;
+    font-weight: 500;
+    display: block;
+    padding: 2rem;
+    letter-spacing: .1rem;
+}
+
+#nav-BTN {
+    background-color: transparent;
+    border: .1rem solid #fff;
+    border-radius: 41px;
+    margin-right: 10rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    transition: 3s;
+}
+
+#nav-BTN:hover {
+    color: #1C1E53;
+    background-color: #fff;
+}
+
+/*bar*/
+
+#nav-links .nav-icon {
+    display: none;
+
+}
+
+
+/*NAV    RESponsive*/
+
+
+@media(max-width: 992px) {
+    #logo-1 {
+        float: none;
+        text-align: left;
+        
+    }
+
+    #nav-links {
+        float: none;
+    }
+
+    #nav-links .nav-link {
+        font-size: 2rem;
+        padding-left: 0;
+    }
+
+    #nav-links .nav-item {
+        float: none;
+        text-align: left;
+    }
+
+    #nav-links .nav-icon {
+        display: block;
+        position: absolute;
+        top: 3rem;
+        right: 6rem;
+        font-size: 2rem;
+    }
+
+    #nav-links.responsive li:not(:first-child) {
+        display: none;
+
+    }
+
+    #nav-BTN {
+        border: none;
+        transition: none;
+    }
+
+    #nav-BTN:hover {
+        background-color: #1C1E53;
+        color: #fff
+    }
+
+
+
+
+
+}
+
+
+/* header*/
+
+header {
+    color: #282938;
+
+
+    padding-top: 16rem;
+    text-align: center;
+}
+
+header h1 {
+
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+header h2 {
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+}
+
+header img {
+
+    width: 100%;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+
+}
+
+header h3 {
+    color: #2405F2;
+    font-size: 1rem;
+    font-weight: 300;
+    padding-bottom: 6rem;
+}
+
+@media(min-width:840px) { 
+    header h1 {
+        padding-left: 37rem;
+        padding-right: 37rem;
+    }
+    header p{
+    padding: 2rem 20rem;
+    }
+
+    header h3 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
+
+@media(min-width:880px) {
+    header h1 {
+        padding-left: 37rem;
+        padding-right: 37rem;
+    }
+}
+
+
+
+/*OUR  BLOG*/
+
+#colums {
+    
+    padding-bottom: 10rem;
+}
+
+#colums h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 3.2rem;
+    padding-bottom: 2rem;
+}
+
+
+.colum {
+    float: left;
+    width:100%;
+    padding: 4rem;
+}
+
+
+
+.img-size {
+    width: 100%;
+    height: auto;
+}
+
+#colums h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#colums h3 {
+    font-size: 2.4rem;
+    padding-bottom: 1rem;
+}
+
+#colums h4 {
+    padding-top: 2rem;
+transition: 2s;
+}
+
+#colums h4:hover {
+   
+    color: #f8c23b;
+}
+
+#colums h4 i {
+    padding-left: .5rem;
+}
+
+@media(min-width:700px){
+
+    .colum{
+        width: 50%;
+    }
+
+}
+
+
+@media(min-width:800px){
+
+    .colum{
+        width: 33.3%;
+    }
+
+}
+
+
+/*foooter*/
+
+
+#about {
+
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #1C1E53;
+    color: #fff;
+
+}
+
+#about-text {
+    text-align: center;
+}
+
+#about-text .left {
+    float: none;
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 25px;
+}
+
+#about-text .right {
+    float: none;
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 25px;
+}
+
+
+.p-text {
+    font-size: 1.6rem;
+    font-weight: 200;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+
+
+
+.a-icon {
+    color: #fff;
+    padding-right: 1rem;
+
+}
+
+.fa-brands:hover{
+    transition: 2s;
+    color: #f3c655;
+}
+
+
+
+/* iki hisseli olan textlerin responsivi*/
+
+@media(min-width:760px) {
+    #about-text .left {
+        text-align: left;
+        float: left;
+        width: 50%;
+        padding-right: 20px;
+        padding-left: 220px;
+    }
+
+    #about-text .right {
+        text-align: left;
+        float: right;
+        width: 50%;
+        padding-right: 220px;
+        padding-left: 20px;
+    }
+
+    #footer-icon {
+        float: left;
+
+    }
+
+
+}
+
+
+/*altadki navbar*/
+section {
+    font-family: 'Poppins';
+    background-color: #fff;
+    color: #1C1E53;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+#logo-2 {
+    float: left;
+    padding-top: 0.5;
+    padding-top: 1rem;
+}
+
+#logo-2 .logo2 {
+    color: #1C1E53;
+    font-weight: 600;
+    font-size: 2.4rem;
+
+
+
+}
+
+/* navbarda olan Li - ler */
+
+#navbar-links {
+    float: right;
+}
+
+#navbar-links .navbar-item {
+    float: left;
+    margin: .5rem;
+}
+
+.navbar-link {
+    color: #1C1E53;
+    font-size: 1.6;
+    font-weight: 500;
+    display: block;
+    padding: 2rem;
+    letter-spacing: .1rem;
+}
+
+.navbar-item:last-child {
+    padding-right: 2rem;
+}
+
+#navbar-links .navbar-icon {
+    display: none;
+    margin-top: -5rem;
+
+}
+
+@media(max-width: 992px) {
+    #logo-2 {
+        float: none;
+        text-align: left;
+    }
+
+    #navbar-links {
+        float: none;
+    }
+
+    #navbar-links .navbar-link {
+        font-size: 2rem;
+        padding-left: 0;
+    }
+
+    #navbar-links .navbar-item {
+        float: inline-end;
+        text-align: left;
+    }
+
+    #navbar-links .navbar-icon {
+        display: block;
+        position: relative;
+        float: right;
+
+        right: 1rem;
+        font-size: 2rem;
+    }
+
+    #navbar-links.responsivE li:not(:first-child) {
+        display: none;
+
+    }
+}
+
+
+/*en sondaki hisee*/
+#last {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #FCD980;
+
+    color: #282938;
+
+
+}
+
+#last-text {
+    text-align: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+#last-text .left {
+    float: none;
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 25px;
+}
+
+
+
+
+#last-text .right {
+
+    float: none;
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 25px;
+}
+
+.last-p {
+    font-size: 1.6rem;
+    font-weight: 200;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/*  iki hisseli olan textlerin responsivi* /
+
+
+
+@media(min-width:770px) {
+    #last-text .left {
+        float: left;
+        width: 50%;
+        padding-right: 20px;
+        padding-left: 220px;
+    }
+
+    #last-text .right {
+        float: right;
+        width: 50%;
+        padding-right: 220px;
+        padding-left: 20px;
+    }
+
+}
